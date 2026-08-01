@@ -310,93 +310,93 @@ export default function DashboardPage() {
 
             {/* Balance Cards */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4">
-              <Card className="p-3 sm:p-6 bg-gradient-to-br from-blue-500/10 to-blue-600/10 border-blue-500/20">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
-                      Account Balance
+              <Card className="p-2 sm:p-4 bg-gradient-to-br from-blue-500/10 to-blue-600/10 border-blue-500/20">
+                <div className="flex items-start justify-between gap-1">
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <p className="text-[10px] sm:text-xs font-medium text-muted-foreground truncate">
+                      Account
                     </p>
-                    <p className="text-base sm:text-xl md:text-2xl font-bold text-foreground mt-0.5 sm:mt-1 truncate">
+                    <p className="text-xs sm:text-sm md:text-base font-bold text-foreground leading-tight break-all">
                       {loading ? (
-                        <span className="inline-block w-16 sm:w-24 h-5 sm:h-7 bg-muted animate-pulse rounded" />
+                        <span className="inline-block w-12 h-4 bg-muted animate-pulse rounded" />
                       ) : (
                         formatCurrency(balances.account_balance)
                       )}
                     </p>
                   </div>
-                  <DollarSign className="w-8 h-8 text-blue-500" />
+                  <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                 </div>
               </Card>
 
-              <Card className="p-3 sm:p-6 bg-gradient-to-br from-green-500/10 to-green-600/10 border-green-500/20">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
-                      Profit Balance
+              <Card className="p-2 sm:p-4 bg-gradient-to-br from-green-500/10 to-green-600/10 border-green-500/20">
+                <div className="flex items-start justify-between gap-1">
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <p className="text-[10px] sm:text-xs font-medium text-muted-foreground truncate">
+                      Profit
                     </p>
-                    <p className="text-base sm:text-xl md:text-2xl font-bold text-green-500 mt-0.5 sm:mt-1 truncate">
+                    <p className="text-xs sm:text-sm md:text-base font-bold text-green-500 leading-tight break-all">
                       {loading ? (
-                        <span className="inline-block w-16 sm:w-24 h-5 sm:h-7 bg-muted animate-pulse rounded" />
+                        <span className="inline-block w-12 h-4 bg-muted animate-pulse rounded" />
                       ) : (
                         formatCurrency(balances.profit_balance)
                       )}
                     </p>
                   </div>
-                  <TrendingUp className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 text-green-500 flex-shrink-0" />
+                  <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" />
                 </div>
               </Card>
 
-              <Card className="p-3 sm:p-6 bg-gradient-to-br from-purple-500/10 to-purple-600/10 border-purple-500/20">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
-                      Trading Balance
+              <Card className="p-2 sm:p-4 bg-gradient-to-br from-purple-500/10 to-purple-600/10 border-purple-500/20">
+                <div className="flex items-start justify-between gap-1">
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <p className="text-[10px] sm:text-xs font-medium text-muted-foreground truncate">
+                      Trading
                     </p>
-                    <p className="text-base sm:text-xl md:text-2xl font-bold text-purple-500 mt-0.5 sm:mt-1 truncate">
+                    <p className="text-xs sm:text-sm md:text-base font-bold text-purple-500 leading-tight break-all">
                       {loading ? (
-                        <span className="inline-block w-16 sm:w-24 h-5 sm:h-7 bg-muted animate-pulse rounded" />
+                        <span className="inline-block w-12 h-4 bg-muted animate-pulse rounded" />
                       ) : (
                         formatCurrency(balances.trading_balance)
                       )}
                     </p>
                   </div>
-                  <CreditCard className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 text-purple-500 flex-shrink-0" />
+                  <CreditCard className="w-4 h-4 sm:w-5 sm:h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                 </div>
               </Card>
 
-              <Card className="p-3 sm:p-6 bg-gradient-to-br from-cyan-500/10 to-cyan-600/10 border-cyan-500/20">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
-                      Funding Balance
+              <Card className="p-2 sm:p-4 bg-gradient-to-br from-cyan-500/10 to-cyan-600/10 border-cyan-500/20">
+                <div className="flex items-start justify-between gap-1">
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <p className="text-[10px] sm:text-xs font-medium text-muted-foreground truncate">
+                      Funding
                     </p>
-                    <p className="text-base sm:text-xl md:text-2xl font-bold text-cyan-500 mt-0.5 sm:mt-1 truncate">
+                    <p className="text-xs sm:text-sm md:text-base font-bold text-cyan-500 leading-tight break-all">
                       {loading ? (
-                        <span className="inline-block w-16 sm:w-24 h-5 sm:h-7 bg-muted animate-pulse rounded" />
+                        <span className="inline-block w-12 h-4 bg-muted animate-pulse rounded" />
                       ) : (
                         formatCurrency(balances.funding_balance)
                       )}
                     </p>
                   </div>
-                  <CreditCard className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 text-cyan-500 flex-shrink-0" />
+                  <CreditCard className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
                 </div>
               </Card>
 
-              <Card className="p-3 sm:p-6 bg-gradient-to-br from-[#00FE01]/10 to-[#00FE01]/20 border-[#00FE01]/30">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
-                      Total Balance
+              <Card className="p-2 sm:p-4 bg-gradient-to-br from-[#00FE01]/10 to-[#00FE01]/20 border-[#00FE01]/30">
+                <div className="flex items-start justify-between gap-1">
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <p className="text-[10px] sm:text-xs font-medium text-muted-foreground truncate">
+                      Total
                     </p>
-                    <p className="text-base sm:text-xl md:text-2xl font-bold text-[#00FE01] mt-0.5 sm:mt-1 truncate">
+                    <p className="text-xs sm:text-sm md:text-base font-bold text-[#00FE01] leading-tight break-all">
                       {loading ? (
-                        <span className="inline-block w-16 sm:w-24 h-5 sm:h-7 bg-muted animate-pulse rounded" />
+                        <span className="inline-block w-12 h-4 bg-muted animate-pulse rounded" />
                       ) : (
                         formatCurrency(balances.total_balance)
                       )}
                     </p>
                   </div>
-                  <DollarSign className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#00FE01] flex-shrink-0" />
+                  <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 text-[#00FE01] mt-0.5 flex-shrink-0" />
                 </div>
               </Card>
             </div>
